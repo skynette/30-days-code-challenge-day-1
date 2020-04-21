@@ -15,7 +15,7 @@ class Test_test_python_day1(unittest.TestCase):
         name = random.choice(valid_names)
         self.assertEqual(twofer(f"{name}"), f"One for {name}, one for me.")
 
-        self.assertEqual(twofer(), f"One for you, one for me.")
+        self.assertEqual(twofer(name), f"One for you, one for me.")
 
 
 
